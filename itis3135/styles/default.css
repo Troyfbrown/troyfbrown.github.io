@@ -34,7 +34,7 @@ a:hover {
 
 figure {
     display: block;
-    text-align: center;
+    align-items: center;
 }
 
 figcaption {
