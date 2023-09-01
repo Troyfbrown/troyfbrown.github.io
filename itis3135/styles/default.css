@@ -25,6 +25,7 @@ h1, h2, h3 {
 
 a {
     color: #780116;
+    font-weight: bold;
 }
 
 a:hover {
@@ -32,13 +33,26 @@ a:hover {
 }
 
 figure {
-    text-align: center;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
 }
 
 figcaption {
     font-style: italic;
+    display: block;
 }
 
 nav {
+    text-align: center;
+}
+
+ul {
+    text-align: center;
+}
+
+p {
     text-align: center;
 }
