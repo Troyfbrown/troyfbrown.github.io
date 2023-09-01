@@ -48,10 +48,10 @@ ul {
     text-align: center;
 }
 
-p {
-    text-align: center;
+ul > li {
+    text-align: left;
 }
 
-.id {
-    text-align: left;
+p {
+    text-align: center;
 }
