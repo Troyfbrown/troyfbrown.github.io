@@ -32,7 +32,7 @@ a:hover {
     color: #c32f27;
 }
 
-figure {
+figure, figure > img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
