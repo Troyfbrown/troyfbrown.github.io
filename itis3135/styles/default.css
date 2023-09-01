@@ -33,13 +33,11 @@ a:hover {
 }
 
 figure {
-    display: block;
     align-items: center;
 }
 
 figcaption {
     font-style: italic;
-    display: block;
 }
 
 nav {
@@ -51,9 +49,5 @@ ul {
 }
 
 p {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
     text-align: center;
 }
