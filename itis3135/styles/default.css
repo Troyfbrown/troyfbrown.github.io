@@ -2,9 +2,43 @@ body {
     background-color: #f7b538;
     color: #c32f27;
     font-family: helvetica, sans-serif;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+header, footer {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+main {
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 h1, h2, h3 {
     font-family: Georgia, 'Courier New';
     color: #780116;
+    text-align: center;
+}
+
+a {
+    color: #780116;
+}
+
+a:hover {
+    color: #c32f27;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+}
+
+nav {
+    text-align: center;
 }
