@@ -39,7 +39,7 @@ figure, figure > img {
     justify-content: center;
     align-items: center;
     gap: 16px;
-    max-width: 300px;
+    max-width: 50%;
     height: 350px;
     margin: 0 auto;
     padding: 20px 10px;
