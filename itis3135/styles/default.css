@@ -17,6 +17,10 @@ main {
     margin-right: 100px;
 }
 
+.bold {
+    font-weight: 800;
+}
+
 h1, h2, h3 {
     font-family: Georgia, 'Courier New';
     color: #780116;
