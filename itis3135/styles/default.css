@@ -18,7 +18,11 @@ main {
 }
 
 .bold {
-    font-weight: 900;
+    font-weight: 1000;
+}
+
+.indent {
+    margin-left: 1em;
 }
 
 h1, h2, h3 {
