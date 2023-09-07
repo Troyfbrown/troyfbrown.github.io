@@ -70,7 +70,7 @@ table, th, td {
 }
 
 table tr:nth-child(1) {
-    background-color: #68460c; 
+    background-color: #261902; 
 }
 
 table tr:nth-child(even) {
