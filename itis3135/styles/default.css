@@ -93,7 +93,7 @@ input[type="submit"] {
     color: #f7b538;
 }
 
-input[type="submit"] {
+input[type="reset"] {
     display: block;
     background-color: #780116;
     color: #f7b538;
