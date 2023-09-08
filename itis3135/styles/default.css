@@ -80,3 +80,9 @@ table tr:nth-child(even) {
 table tr:nth-child(odd) {
     background-color: #986c1a;
 }
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
