@@ -87,13 +87,13 @@ table tr:nth-child(odd) {
     vertical-align: middle;
 }
 
-input[type="submit"] {
+input[type="reset"] {
     display: block;
     background-color: #780116;
     color: #f7b538;
 }
 
-input[type="reset"] {
+input[type="submit"] {
     display: block;
     background-color: #780116;
     color: #f7b538;
