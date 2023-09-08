@@ -86,3 +86,20 @@ table tr:nth-child(odd) {
     margin: 0 0.5em 0 0;
     vertical-align: middle;
 }
+
+input[type="submit"] {
+    display: block;
+    background-color: #780116;
+    color: #f7b538;
+}
+
+input[type="submit"] {
+    display: block;
+    background-color: #780116;
+    color: #f7b538;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
