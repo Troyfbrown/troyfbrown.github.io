@@ -36,18 +36,27 @@
 
             ul {
                 list-style-type: circle;
+                text-align: center;
+            }
+
+            ul > li {
+                text-align: left;
             }
 
             .info-block {
                 display: flex;
                 flex-direction: column;
+                font-size: 0.5em;
+            }
+
+            .info-block:first-of-type {
+                margin-top: 20px;
             }
         </style>
     </head>
     <body>
         <header>
-            <img src="images/company_logo.png" height="128" width="198" alt="Brown & Company Logo">
-            <h1>Brown & Company</h1>
+            <h1><img src="images/company_logo.png" height="128" width="198" alt="Brown & Company Logo"> Brown & Company</h1>
         </header>
         <main>
             <h2>Brown & Company's Services</h2>
