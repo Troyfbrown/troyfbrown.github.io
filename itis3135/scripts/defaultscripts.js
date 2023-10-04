@@ -29,7 +29,7 @@ function greetingOutput() {
     userName.trim();
     userMood.trim();
 
-    if (userName == '' || userMood == '') {
+    if (userName === '' || userMood === '') {
         const errorParagraph = document.getElementById("error");
         errorParagraph.textContent = "Please fill out all fields.";
         return;
