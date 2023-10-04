@@ -22,13 +22,19 @@ function sayDate() {
     document.getElementById("time-header").innerHTML = "It Is Currently " + currentHour + ":" + currentMinute + " " + am_pm + " On " + today;
 }
 
-function greetingSubmit () {
-    
-}
-
 function greetingOutput() {
-    let x = document.getElementById("field1");
-    userName = x.elements[0].value;
-    userMood = x.elements[1].value;
+    userName = document.getElementById("name").value;
+    userMood = document.getElementById("mood").value;
+
+    userName.trim();
+    userMood.trim();
+
+    if (userName == '' || userMood == '') {
+        document.getElementById("error").innerText = "Please fill out all fields.";
+        return;
+    }
+
+    document.getElementById("error").innerText = "";
+
     document.getElementById("greetings-label").innerHTML = companyName + " welcomes you, " + userName + "! We're glad you are feeling " + userMood + "!";
 }

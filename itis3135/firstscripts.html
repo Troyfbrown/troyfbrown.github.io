@@ -11,15 +11,16 @@
         <main>
             <h2>First Scripts</h2>
             <h3 id="time-header"></h3>
-            <form method="post" action="#">
-                <fieldset id="field1">
-                    <label>Please Enter Your Name: <input type="text" name="name" required></label>
-                    <label>Tell Us How You're Feeling: <input type="text" name="mood" required></label>
-                    <input type="submit" value="Submit">
+            <form id="scripts-form">
+                <fieldset>
+                    <label for="name">Please Enter Your Name: <input type="text" id="name" name="name"></label>
+                    <label for="mood">Tell Us How You're Feeling: <input type="text" id="mood" name="mood"></label>
+                    <button type="button" id="submit-button" onclick="greetings()">Submit</button>
                 </fieldset>
-                <p>Click below for a greeting!</p>
-                <button onclick="greetings()">Greetings!</button>
-                <p id="greetings-label"></p>
+                <fieldset>
+                    <p id="error"></p>
+                    <p id="greetings-label"></p>
+                </fieldset>
             </form>
         </main>
         <div data-include="components/footer.html"></div>

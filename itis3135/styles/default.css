@@ -99,6 +99,12 @@ input[type="submit"] {
     color: #f7b538;
 }
 
+.submit-button {
+    display: block;
+    background-color: #780116;
+    color: #f7b538;
+}
+
 label {
     display: block;
     margin: 0.5rem 0;
