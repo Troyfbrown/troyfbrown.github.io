@@ -103,3 +103,7 @@ label {
     display: block;
     margin: 0.5rem 0;
 }
+
+footer p {
+    text-align: center;
+}
