@@ -30,11 +30,14 @@ function greetingOutput() {
     userMood.trim();
 
     if (userName == '' || userMood == '') {
-        document.getElementById("error").innerText = "Please fill out all fields.";
+        const errorParagraph = document.getElementById("error");
+        errorParagraph.textContent = "Please fill out all fields.";
         return;
     }
 
-    document.getElementById("error").innerText = "";
+    const errorParagraph = document.getElementById("error");
+    errorParagraph.textContent = "";
 
-    document.getElementById("greetings-label").innerHTML = companyName + " welcomes you, " + userName + "! We're glad you are feeling " + userMood + "!";
+    const greetingsParagraph = document.getElementById("greetings");
+    resultParagraph.textContent = " ${companyName} welcomes you, ${userName}! We're glad you are feeling ${userMood}!";
 }
