@@ -22,7 +22,7 @@ function sayDate() {
     document.getElementById("time-header").innerHTML = "It Is Currently " + currentHour + ":" + currentMinute + " " + am_pm + " On " + today;
 }
 
-function greetingOutput() {
+function greetings() {
     userName = document.getElementById("name").value;
     userMood = document.getElementById("mood").value;
 
