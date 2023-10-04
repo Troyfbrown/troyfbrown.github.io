@@ -19,7 +19,8 @@ function sayDate() {
     } else if (currentMinute == 0) {
         currentMinute = "00";
     }
-    document.getElementById("time-header").innerHTML = "It Is Currently " + currentHour + ":" + currentMinute + " " + am_pm + " On " + today;
+    const timeHeader = document.getElementById("time-header");
+    timeHeader.textContent = `It Is Currently ${currentHour}:${currentMinute} ${am_pm} On ${today}`;
 }
 
 function greetings() {
@@ -39,5 +40,5 @@ function greetings() {
     errorParagraph.textContent = "";
 
     const greetingsParagraph = document.getElementById("greetings");
-    greetingsParagraph.textContent = '${companyName} welcomes you, ${userName}! We\'re glad you are feeling ${userMood}!';
+    greetingsParagraph.textContent = `${companyName} welcomes you, ${userName}! We\'re glad you are feeling ${userMood}!`;
 }
