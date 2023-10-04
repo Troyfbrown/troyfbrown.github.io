@@ -6,10 +6,21 @@
         <link rel="stylesheet" href="styles/default.css" type="text/css"/>
         <script src="scripts/defaultscripts.js"></script>
     </head>
-    <body>
+    <body onload="sayDate()">
         <div data-include="components/header.html"></div>
         <main>
-            
+            <h2>First Scripts</h2>
+            <h3 id="time-header"></h3>
+            <form method="post" action="#">
+                <fieldset id="field1">
+                    <label>Please Enter Your Name: <input type="text" name="name" required></label>
+                    <label>Tell Us How You're Feeling: <input type="text" name="mood" required></label>
+                    <input type="submit" value="Submit">
+                </fieldset>
+                <p>Click below for a greeting!</p>
+                <button onclick="greetings()">Greetings!</button>
+                <p id="greetings-label"></p>
+            </form>
         </main>
         <div data-include="components/footer.html"></div>
         <script src="scripts/HTMLInclude.js"></script>
