@@ -39,5 +39,5 @@ function greetings() {
     errorParagraph.textContent = "";
 
     const greetingsParagraph = document.getElementById("greetings");
-    greetingsParagraph.textContent = " ${companyName} welcomes you, ${userName}! We're glad you are feeling ${userMood}!";
+    greetingsParagraph.textContent = '${companyName} welcomes you, ${userName}! We\'re glad you are feeling ${userMood}!';
 }
