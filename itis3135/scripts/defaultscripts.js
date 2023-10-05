@@ -95,5 +95,5 @@ function findPolygon() {
             polyName = "Polygon with and unknown number of sides"
             break;
     }
-    alert(`The number you selected, (${polyNumberInput}) corresponds to the polygon ${polyName}`);
+    alert(`The number you selected, (${polyNumber}) corresponds to the polygon ${polyName}`);
 }
