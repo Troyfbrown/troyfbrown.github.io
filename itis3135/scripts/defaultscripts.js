@@ -47,7 +47,7 @@ function findPolygon() {
     var polyNumberInput = document.getElementById("polygon-num");
     let polyNumber = parseFloat(polyNumberInput.value);
 
-    polyNumber = Math.abs(polynumber);
+    polyNumber = Math.abs(polyNumber);
     polyNumber = Math.round(polyNumber);
 
     if (polyNumber < 0) {
