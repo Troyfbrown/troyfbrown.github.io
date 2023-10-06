@@ -157,31 +157,31 @@ function destroyDam() {
 function petBeaver() {
     timesPet++;
     if (timesPet <= 5) {
-        alert(`Thank you for petting the beaver! You have pet him ${timesPet} now!
+        alert(`Thank you for petting the beaver! You have pet him ${timesPet} time(s) now!
         He appreciates it!`);
         return;
     } else if (timesPet <= 10) {
-        alert(`Thank you for petting the beaver! You have pet him ${timesPet} now!
+        alert(`Thank you for petting the beaver! You have pet him ${timesPet} times now!
         He seems quite pleased!`);
         return;
     } else if (timesPet <= 15) {
-        alert(`Thank you for petting the beaver! You have pet him ${timesPet} now!
+        alert(`Thank you for petting the beaver! You have pet him ${timesPet} times now!
         He's starting to purr! I didn't know beavers did that.`);
         return;
     } else if (timesPet <= 20) {
-        alert(`Thank you for petting the beaver! You have pet him ${timesPet} now!
+        alert(`Thank you for petting the beaver! You have pet him ${timesPet} times now!
         He is starting to calm down from his pet high.`);
         return;
     } else if (timesPet <= 21) {
-        alert(`You have pet him ${timesPet} now!
+        alert(`You have pet him ${timesPet} times now!
         He seems honestly a little bothered.`);
         return;
     } else if (timesPet <= 22) {
-        alert(`You have pet him ${timesPet} now!
+        alert(`You have pet him ${timesPet} times now!
         He's pretty indifferent now. He is num to the pets.`);
         return;
     } else if (timesPet <= 23) {
-        alert(`You're still petting though, ${timesPet} now.`);
+        alert(`You're still petting though, ${timesPet} times now.`);
         return;
     } else if (timesPet <= 24) {
         alert(`Stiiiiiiiiiill going, ${timesPet} pets.`);
