@@ -133,7 +133,7 @@ function subtractDam() {
 
     woodInDam--;
     woodTaken++;
-    if (woodInDam < 10) {
+    if (woodTaken < 10) {
         alert(`Oh No! You've taken wood from the beaver's dam.
         You have now taken ${woodTaken} pieces of wood from the dam.`);
     } else {
