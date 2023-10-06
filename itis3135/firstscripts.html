@@ -15,13 +15,21 @@
                 <fieldset>
                     <label for="name">Please Enter Your Name: <input type="text" id="name" name="name"></label>
                     <label for="mood">Tell Us How You're Feeling: <input type="text" id="mood" name="mood"></label>
-                    <button type="button" id="submit-button" onclick="greetings()">Submit</button>
+                    <button type="button" id="submit-button" class="submit-button" onclick="greetings()">Submit</button>
                     <p id="error"></p>
                     <p id="greetings"></p>
                 </fieldset>
                 <fieldset>
                     <label for="polygon-num">Please Enter a number 0-10: <input type="number" id="polygon-num" name="polygon-num" min="0" max="10"></label>
-                    <button type="button" id="polygon-button" onclick="findPolygon()">Your Polygon</button>
+                    <button type="button" id="polygon-button" class="submit-button" onclick="findPolygon()">Your Polygon</button>
+                </fieldset>
+                <fieldset>
+                    <label>Hangout with the beaver!</label>
+                    <button type="button" id="check-button" class="submit-button inline" onclick="checkDam()">Check The Dam</button>
+                    <button type="button" id="add-button" class="submit-button inline" onclick="addDam()">Add Wood</button>
+                    <button type="button" id="subtract-button" class="submit-button inline" onclick="subtractDam()">Take Wood</button>
+                    <button type="button" id="destroy-button" class="submit-button inline" onclick="destroyDam()">Destroy The Dam</button>
+                    <button type="button" id="pet-button" class="submit-button inline" onclick="petBeaver()">Pet The Beaver!</button>
                 </fieldset>
             </form>
         </main>
