@@ -44,9 +44,12 @@ function displayForm() {
     let content = "<h2>Your Introduction</h2>";
     formData.forEach((value, key) => {
         if (Array.isArray(value)) {
+            content+= `<p><span class="bold">${key}:</span>
+            <ul>`
             value.forEach((item) => {
-                content += `<p><strong>${key}:</strong> ${item}</p>`;
+                content += `<li>${item}</li>`;
             });
+            content += `</ul>`
         } else {
             content += `<p><strong>${key}:</strong> ${value}</p>`;
         }
