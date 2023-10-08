@@ -80,7 +80,7 @@ function displayForm() {
                         <ul>`;
                 break;
             case "courses[]":
-                content += `<li>${item}</li>`;
+                content += `<li>${value}</li>`;
                 content += `
                         </ul>
                     </li>`;
