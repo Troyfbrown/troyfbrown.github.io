@@ -43,17 +43,62 @@ function displayForm() {
 
     let content = "<h2>Your Introduction</h2>";
     formData.forEach((value, key) => {
-        if (key === "image") {
-            content += loadImage();
-        } else if (Array.isArray(value)) {
-            content+= `<p><span class="bold">${key}:</span>
-            <ul>`
-            value.forEach((item) => {
-                content += `<li>${item}</li>`;
-            });
-            content += `</ul>`
-        } else {
-            content += `<p><strong>${key}:</strong> ${value}</p>`;
+        switch (key) {
+            case "name":
+                content += `<h3>${value}'s Introduction</h3>`;
+                break;
+            case "mascot":
+                content += `<p>/span class="bold">Mascot:</span> ${value}</p>`;
+                break;
+            case "intro-image":
+                var text = loadImage();
+                content += `
+                <div class="loadImage">
+                    ${text}
+                </div> `
+                break;
+            case "image-cap":
+                content += `<p><em>${value}</em></p>`;
+                break;
+            case "personal-back":
+                content += `<ul>
+                <li></span class="bold">Personal Background:</span> ${value}</li>`;
+                break;
+            case "professional-back":
+                content += `<li><span class="bold">Professional Background:</span> ${value}</li>`;
+                break;
+            case "academic-back":
+                content += `<li><span class="bold">Academic Background:</span> ${value}</li>`;
+                break;
+            case "subject-back":
+                content += `<li><span class="bold">Background in This Subject:</span> ${value}</li>`;
+                break;
+            case "primary-plat":
+                content += `<li><span class="bold">Primary Computer Platform</span> ${value}</li>`;
+                break;
+            case "courses[]":
+                if (Array.isArray(value)) {
+                    content+= `
+                    <li><span class="bold">:</span>
+                        <ul>`
+                    value.forEach((item) => {
+                        content += `<li>${item}</li>`;
+                    });
+                    content += `
+                        </ul>
+                    </li>`
+                }
+                break;
+            case "funny-thing":
+                content += `<li><span class="bold">Funny/Interesting Item to Remember me by:</span> ${value}</li>`;
+                break;
+            case "anything":
+                content += `<li><span class="bold">I'd also like to Share:</span> ${value}</li>
+                </ul>`;
+                break;
+            default:
+                content += ``;
+                break;
         }
     });
     content += `<a type="reset" onclick="resetForm">`;
