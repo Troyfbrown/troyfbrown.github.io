@@ -42,15 +42,15 @@ function displayForm() {
     const formContent = document.getElementById("form-content");
 
     let content = "<h2>Your Introduction</h2>";
-    for (const field of formData.entries()) {
-        if (Array.isArray(field[1])) {
-            for (const value of field[1]) {
-                content += `<p><span class="bold">${fiel[0]}:</span> ${value}</p>`;
-            }
+    formData.forEach((value, key) => {
+        if (Array.isArray(value)) {
+            value.forEach((item) => {
+                content += `<p><strong>${key}:</strong> ${item}</p>`;
+            });
         } else {
-            content += `<p><span class="bold">${field[0]}:</span> ${value}</p>`;
+            content += `<p><strong>${key}:</strong> ${value}</p>`;
         }
-    }
+    });
 
     formContent.innerHTML = content;
 }
