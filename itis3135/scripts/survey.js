@@ -75,21 +75,15 @@ function displayForm() {
                 break;
             case "primary-plat":
                 content += `<li><span class="bold">Primary Computer Platform</span> ${value}</li>`;
+                content+= `
+                    <li><span class="bold">Courses:</span>
+                        <ul>`;
                 break;
             case "courses[]":
-                if (Array.isArray(value)) {
-                    content+= `
-                    <li><span class="bold">Courses:</span>
-                        <ul>`
-                    value.forEach((item) => {
-                        content += `<li>${item}</li>`;
-                    });
-                    content += `
+                content += `<li>${item}</li>`;
+                content += `
                         </ul>
                     </li>`;
-                } else {
-                    alert ("it isnt an array!");
-                }
                 break;
             case "funny-thing":
                 content += `<li><span class="bold">Funny/Interesting Item to Remember me by:</span> ${value}</li>`;
@@ -103,7 +97,7 @@ function displayForm() {
                 break;
         }
     });
-    content += `<button type="reset" id="reset" onclick="resetForm()">Reset</button>`;
+    content += `<button type="reset" id="reset2" onclick="resetForm()">Reset</button>`;
 
     form.style.display = "none";
     formContent.innerHTML = content;
