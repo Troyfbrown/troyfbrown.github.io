@@ -23,7 +23,7 @@ function resetForm() {
 function addCourseInput() {
     const courseContainer = document.getElementById("course-container");
     const addedCourse = document.createElement("div");
-    addedCourse.courseList.add("added-class");
+    addedCourse.classList.add("added-class");
     addedCourse.innerHTML = `<input type="text" class="course" name="courses[]" placeholder="Course Name and Description" required>
     <button type="button" class="deleteCourse" onclick="deleteCourse(this)">Delete</button>`;
 
