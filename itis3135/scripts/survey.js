@@ -24,7 +24,8 @@ function addCourseInput() {
     const courseContainer = document.getElementById("course-container");
     const addedCourse = document.createElement("div");
     addedCourse.classList.add("added-class");
-    addedCourse.innerHTML = `<input type="text" class="course" name="courses[]" placeholder="Course Name and Description" required>
+    const courses = [];
+    addedCourse.innerHTML = `<input type="text" class="course" name="${courses}" placeholder="Course Name and Description" required>
     <button type="button" class="deleteCourse" onclick="deleteCourse(this)">Delete</button>`;
 
     courseContainer.appendChild(addedCourse);
