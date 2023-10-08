@@ -1,3 +1,6 @@
+function scriptTest() {
+    alert("the script is working");
+}
 function checkForm() {
     const form = document.getElementById("intro-form");
     if (form.checkValidity()) {
