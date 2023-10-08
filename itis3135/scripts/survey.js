@@ -27,7 +27,7 @@ function addCourseInput() {
     addedCourse.innerHTML = `<input type="text" class="course" name="courses[]" placeholder="Course Name and Description" required>
     <button type="button" class="deleteCourse" onclick="deleteCourse(this)">Delete</button>`;
 
-    courseCountainer.appendChild(addedCourse);
+    courseContainer.appendChild(addedCourse);
 }
 
 function deleteCourse(button) {
