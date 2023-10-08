@@ -20,7 +20,7 @@ function resetForm() {
 
 }
 
-function addCourse() {
+function addCourseInput() {
     const courseContainer = document.getElementById("course-container");
     const addedCourse = document.creatElement("div");
     addedCourse.courseList.add("added-class");
