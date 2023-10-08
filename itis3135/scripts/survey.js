@@ -48,7 +48,7 @@ function displayForm() {
                 content += `<h3>${value}'s Introduction</h3>`;
                 break;
             case "mascot":
-                content += `<p>/span class="bold">Mascot:</span> ${value}</p>`;
+                content += `<p></span class="bold">Mascot:</span> ${value}</p>`;
                 break;
             case "intro-image":
                 var text = loadImage();
@@ -77,7 +77,6 @@ function displayForm() {
                 content += `<li><span class="bold">Primary Computer Platform</span> ${value}</li>`;
                 break;
             case "courses[]":
-                if (Array.isArray(value)) {
                     content+= `
                     <li><span class="bold">:</span>
                         <ul>`
@@ -87,7 +86,6 @@ function displayForm() {
                     content += `
                         </ul>
                     </li>`
-                }
                 break;
             case "funny-thing":
                 content += `<li><span class="bold">Funny/Interesting Item to Remember me by:</span> ${value}</li>`;
@@ -101,7 +99,7 @@ function displayForm() {
                 break;
         }
     });
-    content += `<a type="reset" onclick="resetForm">`;
+    content += `<button type="reset" id="reset" onclick="resetForm()">Reset</button>`;
 
     form.style.display = "none";
     formContent.innerHTML = content;
