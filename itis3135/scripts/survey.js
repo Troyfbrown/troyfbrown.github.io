@@ -81,11 +81,11 @@ function displayForm() {
                 break;
             case "courses[]":
                 content += `<li>${value}</li>`;
+                break;
+            case "funny-thing":
                 content += `
                         </ul>
                     </li>`;
-                break;
-            case "funny-thing":
                 content += `<li><span class="bold">Funny/Interesting Item to Remember me by:</span> ${value}</li>`;
                 break;
             case "anything":
