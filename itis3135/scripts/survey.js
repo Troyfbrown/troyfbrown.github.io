@@ -17,7 +17,7 @@ function resetForm() {
 
     form.reset();
     courseContainer.innerHTML = '';
-
+    form.style.display = "block";
 }
 
 function addCourseInput() {
@@ -55,5 +55,7 @@ function displayForm() {
         }
     });
     content += `<a type="reset" onclick="resetForm">`;
+
+    form.style.display = "none";
     formContent.innerHTML = content;
 }
