@@ -51,6 +51,6 @@ function displayForm() {
             content += `<p><strong>${key}:</strong> ${value}</p>`;
         }
     });
-
+    content += `<a type="reset" onclick="resetForm">`;
     formContent.innerHTML = content;
 }
