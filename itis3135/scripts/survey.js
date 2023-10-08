@@ -43,7 +43,9 @@ function displayForm() {
 
     let content = "<h2>Your Introduction</h2>";
     formData.forEach((value, key) => {
-        if (Array.isArray(value)) {
+        if (key === "image") {
+            content += loadImage();
+        } else if (Array.isArray(value)) {
             content+= `<p><span class="bold">${key}:</span>
             <ul>`
             value.forEach((item) => {
@@ -58,4 +60,12 @@ function displayForm() {
 
     form.style.display = "none";
     formContent.innerHTML = content;
+}
+
+function loadImage() {
+    var image = document.getElementById('intro-image').files[0];
+    const imageUrl = URL.createObjectURL(image);
+
+    var text = `<img src="${imageUrl}">`;
+    return text;
 }
