@@ -42,6 +42,7 @@ function displayForm() {
     const formContent = document.getElementById("form-content");
 
     let content = "<h2>Your Introduction</h2>";
+    let coursesListOpened = false;
     formData.forEach((value, key) => {
         switch (key) {
             case "name":
@@ -75,17 +76,29 @@ function displayForm() {
                 break;
             case "primary-plat":
                 content += `<li><span class="bold">Primary Computer Platform</span> ${value}</li>`;
-                content+= `
-                    <li><span class="bold">Courses:</span>
-                        <ul>`;
+                if (coursesListOpened) {
+                    content += `
+                        </ul>
+                    </li>`;
+                    coursesListOpened = false;
+                }
                 break;
             case "courses[]":
+                if (!coursesListOpened) {
+                    content += `
+                    <li><span class="bold">Courses:</span>
+                        <ul>`;
+                    coursesListOpened = true;
+                }
                 content += `<li>${value}</li>`;
                 break;
             case "funny-thing":
-                content += `
+                if (coursesListOpened) {
+                    content += `
                         </ul>
                     </li>`;
+                    coursesListOpened = false;
+                }
                 content += `<li><span class="bold">Funny/Interesting Item to Remember me by:</span> ${value}</li>`;
                 break;
             case "anything":
