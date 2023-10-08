@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Troy Brown's Tasteless Beaver &yen; itis3135 &yen; BYO Intro </title>
+        <link rel="stylesheet" href="styles/default.css" type="text/css"/>
+        <script src="scripts/survey.js"></script>
+    </head>
+    <body>
+        <div data-include="components/header.html"></div>
+        <main>
+            <h2>BYO Intro</h2>
+            <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+            <form id="intro-form">
+                <fieldset>
+                    <label for="name">Name: <input type="text" id="name" name="name" required></label>
+                </fieldset>
+                <fieldset>
+                    <label for="mascot">Mascot: <input type="text" id="mascot" name="mascot" required></label>
+                </fieldset>
+                <fieldset>
+                    <label for="image">Image: <input type="file" id="image" name="image" accept=".png, .jpg" required></label>
+                </fieldset>
+                <fieldset>
+                    <label for="image-cap">Image Caption: <input type="text" id="image-cap" name="image-cap" required></label>
+                </fieldset>
+                <fieldset>
+                    <label for="personal-back">Personal Background: <input type="text" id="personal-back" name="personal-back" required></label>
+                </fieldset>
+                <fieldset>
+                    <label for="professional-back">Professional Background: <input type="text" id="professional-back" name="professional-back" required></label>
+                </fieldset>
+                <fieldset>
+                    <label for="academic-back">Academic Background: <input type="text" id="academic-back" name="academic-back" required></label>
+                </fieldset>
+                <fieldset>
+                    <label for="subject-back">Background in Web Development: <input type="text" id="subject-back" name="subject-back" required></label>
+                </fieldset>
+                <fieldset>
+                    <label for="primary-plat">Primary Computer Platform: <input type="text" id="primary-plat" name="primary-palt" required></label>
+                </fieldset>
+                <fieldset>
+                    <div id="course-container"></div>
+                    <button type="button" id="addCourse" onclick="addCourseInput()">Add Course</button>
+                </fieldset>
+                <fieldset>
+                    <label for="funny-thing">Funny/Interesting Thing To Remember You By: <input type="text" id="funny-thing" name="funny-thing" required></label>
+                </fieldset>
+                <fieldset>
+                    <label for="anything">Anything Else You would Like To Add: <input type="text" id="anything" name="anything" required></label>
+                </fieldset>
+                <fieldset>
+                    <label for="agree"><input type="checkbox" id="agree" name="agree" required>I understand that what is on this page is not password protected and I will not put anything here that I don't want publicly available.</label>
+                </fieldset>
+                <fieldset>
+                    <button type="button" id="submit" onclick="checkForm()">Submit</button>
+                    <button type="button" id="reset" onclick="resetForm()">Reset</button>
+                </fieldset>
+            </form>
+            <div id="form-content"></div>
+        </main>
+        <div data-include="components/footer.html"></div>
+        <script src="scripts/HTMLInclude.js"></script>
+    </body>
+</html>
+
