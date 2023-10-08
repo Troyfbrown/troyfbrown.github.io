@@ -77,15 +77,19 @@ function displayForm() {
                 content += `<li><span class="bold">Primary Computer Platform</span> ${value}</li>`;
                 break;
             case "courses[]":
+                if (Array.isArray(value)) {
                     content+= `
-                    <li><span class="bold">:</span>
+                    <li><span class="bold">Courses:</span>
                         <ul>`
                     value.forEach((item) => {
                         content += `<li>${item}</li>`;
                     });
                     content += `
                         </ul>
-                    </li>`
+                    </li>`;
+                } else {
+                    alert ("it isnt an array!");
+                }
                 break;
             case "funny-thing":
                 content += `<li><span class="bold">Funny/Interesting Item to Remember me by:</span> ${value}</li>`;
