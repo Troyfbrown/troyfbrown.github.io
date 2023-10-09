@@ -60,7 +60,7 @@ function displayForm() {
                 break;
             case "personal-back":
                 content += `<ul>
-                <li></span class="bold">Personal Background:</span> ${value}</li>`;
+                <li><span class="bold">Personal Background:</span> ${value}</li>`;
                 break;
             case "professional-back":
                 content += `<li><span class="bold">Professional Background:</span> ${value}</li>`;
