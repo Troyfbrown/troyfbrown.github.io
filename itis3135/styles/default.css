@@ -1,5 +1,22 @@
 @media (min-width: 576px) {
-    
+    body {
+        background-color: #f7b538;
+        color: #c32f27;
+        font-family: helvetica, sans-serif;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    header, footer {
+        margin-top: 7px;
+        margin-bottom: 7px;
+        text-align: center;
+    }
+
+    main {
+        margin-left: 13px;
+        margin-right: 13px;
+    }
 }
 
 body {
