@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troy Brown's Tasteless Beaver &yen; itis3135 &yen; Calculator Try </title>
+    <link rel="stylesheet" href="styles/default.css" type="text/css"/>
+    <script src="scripts/calculator_try.js"></script>
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+    <main>
+        <h2>Calculator Try</h2>
+        <form id="calc-try-form">
+            <label for="num1">Enter Your First Number:<input type="number" id="num1" name="num1" required></label>
+            <label for="num2">Enter Your Second Number:<input type="number" id="num1" name="num1" required></label>
+            <button type="button" id="sum" onclick="addButton()">Addition</button>
+            <button type="button" id="difference" onclick="subtractButton()">Subtraction</button>
+            <button type="button" id="product" onclick="multiplyButton()">Multiplication</button>
+            <button type="button" id="quotient" onclick="divideButton()">Division</button>
+        </form>
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/HTMLInclude.js"></script>
+</body>
+</html>
