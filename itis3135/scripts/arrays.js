@@ -1,7 +1,7 @@
 let person = [];
 let salaries = [];
 
-function addSalary() {
+function addSalary(event) {
     let selectedEmployee = document.getElementById('employee-dropdown').value;
 
     let enteredSalary = prompt(`Enter the salary for ${selectedEmployee}:`);
@@ -17,7 +17,7 @@ function addSalary() {
     document.getElementById('employee-dropdown').focus();
 }
 
-function displayResults() {
+function displayResults(event) {
     let totalSalary = 0;
     let highestSalary = 0;
 
@@ -36,7 +36,7 @@ function displayResults() {
                             <p>Highest Salary: ${highestSalary}</p>`;
 }
 
-function displaySalary() {
+function displaySalary(event) {
     const table = document.getElementById('results_table');
 
     for (let i = 0; i < persons.length; i++) {
