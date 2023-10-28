@@ -2,8 +2,10 @@ let person = [];
 let salaries = [];
 
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('employee-dropdown').focus();
-});
+    setTimeout(() => {
+        document.getElementById('employee').focus();
+    }, 0);
+})
 
 function addSalary(event) {
     let selectedEmployee = document.getElementById('employee-dropdown').value;
@@ -42,6 +44,10 @@ function displayResults(event) {
 
 function displaySalary(event) {
     const table = document.getElementById('results_table');
+
+    for (let i = table.rows.length - 1; i > 0; i--) {
+        table.deleteRow(i);
+    }
 
     for (let i = 0; i < person.length; i++) {
         const row = table.insertRow(-1);
