@@ -2,7 +2,7 @@ let person = [];
 let salaries = [];
 
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('employee').focus();
+    document.getElementById('employee-dropdown').focus();
 });
 
 function addSalary(event) {
@@ -43,11 +43,11 @@ function displayResults(event) {
 function displaySalary(event) {
     const table = document.getElementById('results_table');
 
-    for (let i = 0; i < persons.length; i++) {
+    for (let i = 0; i < person.length; i++) {
         const row = table.insertRow(-1);
         const cell1 = row.insertCell(0);
         const cell2 = row.insertCell(1);
-        cell1.textContent = persons[i];
+        cell1.textContent = person[i];
         cell2.textContent = salaries[i];
     }
 }
