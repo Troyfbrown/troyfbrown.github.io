@@ -2,7 +2,7 @@ var person = [];
 var salaries = [];
 
 function addSalary() {
-    let selectedEmployee = document.getElementById('employee').value;
+    let selectedEmployee = document.getElementById('employee-dropdown').value;
 
     let enteredSalary = prompt(`Enter the salary for ${selectedEmployee}:`);
 
@@ -14,7 +14,7 @@ function addSalary() {
     persons.push(selectedEmployee);
     salaries.push(parseFloat(enteredSalary));
 
-    document.getElementById('employee').focus();
+    document.getElementById('employee-dropdown').focus();
 }
 
 function displayResults() {
@@ -56,5 +56,5 @@ function displaySalary() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('employee').focus();
+    document.getElementById('employee-dropdown').focus();
 });
