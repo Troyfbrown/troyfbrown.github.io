@@ -17,12 +17,20 @@
                     <button class="submit-button" onClick="displaySalary()">Display Salary</button>
                 </fieldset>
                 <fieldset>
-                    <section>
-                        <option value="Jeff"></option>
-                        <option value="Aubrie"></option>
-                        <option value="Phillip"></option>
-                    </section>
+                    <label for="employee-dropdown">Choose an Employee: 
+                        <section id="employee-dropdown">
+                            <option value="Jeffery">Jeffery Brown</option>
+                            <option value="Mark">Mark Guthrie</option>
+                            <option value="Aubrie">Aubrie Lynn</option>
+                            <option value="Trevor">Trevor Tumbaridis</option>
+                            <option value="Lane">Lane Bismarc</option>
+                            <option value="Tim">Tim Fairbanks</option>
+                            <option value="Clark">Clark Grisham</option>
+                        </section>
+                    </label>
                 </fieldset>
+                <div id="results"></div>
+                <table id="results_table"></table>
             </form>
         </main>
         <div data-include="components/footer.html"></div>
