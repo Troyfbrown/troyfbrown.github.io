@@ -1,5 +1,5 @@
-var person = [];
-var salaries = [];
+let person = [];
+let salaries = [];
 
 function addSalary() {
     let selectedEmployee = document.getElementById('employee-dropdown').value;
@@ -11,7 +11,7 @@ function addSalary() {
         return;
     }
 
-    persons.push(selectedEmployee);
+    person.push(selectedEmployee);
     salaries.push(parseFloat(enteredSalary));
 
     document.getElementById('employee-dropdown').focus();
@@ -29,15 +29,16 @@ function displayResults() {
     }
 
     const averageSalary = totalSalary / salaries.length;
+
     const resultsDiv = document.getElementById('results');
     resultsDiv.innerHTML = `<h2>Results</h2>
-        <p>Average Salary: ${averageSalary}</p>
-        <p>Highest Salary: ${highestSalary}</p>`;
+                            <p>Average Salary: ${averageSalary}</p>
+                            <p>Highest Salary: ${highestSalary}</p>`;
 }
 
 function displaySalary() {
     const table = document.getElementById('results_table');
-    
+
     table.innerHTML = `
         <tr>
             <th>Name</th>
@@ -53,6 +54,8 @@ function displaySalary() {
             </tr>
         `;
     }
+
+    displayResults();
 }
 
 document.addEventListener('DOMContentLoaded', function() {
