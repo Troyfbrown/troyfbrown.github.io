@@ -39,23 +39,13 @@ function displayResults() {
 function displaySalary() {
     const table = document.getElementById('results_table');
 
-    table.innerHTML = `
-        <tr>
-            <th>Name</th>
-            <th>Salary</th>
-        </tr>
-    `;
-
-    for (let i = 0; i < person.length; i++) {
-        table.innerHTML += `
-            <tr>
-                <td>${person[i]}</td>
-                <td>${salaries[i]}</td>
-            </tr>
-        `;
+    for (let i = 0; i < persons.length; i++) {
+        const row = table.insertRow(-1);
+        const cell1 = row.insertCell(0);
+        const cell2 = row.insertCell(1);
+        cell1.textContent = persons[i];
+        cell2.textContent = salaries[i];
     }
-
-    displayResults();
 }
 
 document.addEventListener('DOMContentLoaded', function() {
