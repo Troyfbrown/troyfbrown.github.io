@@ -1,6 +1,10 @@
 let person = [];
 let salaries = [];
 
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('employee').focus();
+});
+
 function addSalary(event) {
     let selectedEmployee = document.getElementById('employee-dropdown').value;
 
@@ -48,6 +52,3 @@ function displaySalary(event) {
     }
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('employee-dropdown').focus();
-});
