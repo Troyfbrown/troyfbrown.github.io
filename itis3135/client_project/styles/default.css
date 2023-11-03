@@ -45,14 +45,15 @@ header {
 }
 
 .header-title {
-    border-right: var(--color-4);
+    border-right: 1px solid var(--color-4);
     justify-self: left;
     color: var(--color-5);
 }
 
 .header-nav {
-    border-left: 1px solid;
-    justify-self: right;
+    border-left: 1px solid var(--color-4);
+    justify-self: flex-end;
+    color: var(--color-5);
 }
 
 nav {
