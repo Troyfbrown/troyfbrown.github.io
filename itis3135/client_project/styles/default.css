@@ -111,6 +111,6 @@ th {
 }
 
 a {
-    text-emphasis: none;
-    color: var(--color-4);
+    text-decoration: none;
+    color: var(--color-5);
 }
