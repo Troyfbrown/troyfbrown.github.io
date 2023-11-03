@@ -30,9 +30,11 @@ h2 {
 }
 
 .header-block {
+    background-color: var(--color-2);
     display: flex;
     flex-direction: row;
     top: 0;
+    margin: 0;
     padding: 0 10px 0 10px;
     border: 2px solid;
     border-collapse: collapse;
@@ -41,12 +43,16 @@ h2 {
 .header-title {
     border-right: 1px solid;
     justify-self: left;
+    color: var(--color-5);
 }
 
 .header-nav {
     border-left: 1px solid;
     justify-self: right;
-    justify-content: space-between;
+}
+
+nav {
+    justify-content: space-evenly;
 }
 
 .content-block {
@@ -96,5 +102,10 @@ table, th, td {
 }
 
 th {
+    color: var(--color-4);
+}
+
+a {
+    text-emphasis: none;
     color: var(--color-4);
 }
