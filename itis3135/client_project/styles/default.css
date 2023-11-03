@@ -31,6 +31,8 @@ h2 {
 
 header {
     top: 0;
+    left: 0;
+    right: 0;
     margin: 0;
     padding: 0;
 }
@@ -62,7 +64,16 @@ header {
 }
 
 .header-nav nav {
-    justify-content: space-evenly;
+    justify-content: space-between;
+}
+
+
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .footer-block {
