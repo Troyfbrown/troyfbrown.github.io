@@ -46,20 +46,18 @@ header {
 .header-title {
     border-right: 1px solid var(--color-4);
     width: 20%;
-    margin: 5px;
-    justify-self: left;
+    padding: 5px;
     color: var(--color-5);
 }
 
 .header-nav {
     border-left: 1px solid var(--color-4);
     width: 80%;
-    margin: 5px;
-    justify-self: flex-end;
+    padding: 5px;
     color: var(--color-5);
 }
 
-nav {
+.header-nav nav {
     justify-content: space-evenly;
 }
 
