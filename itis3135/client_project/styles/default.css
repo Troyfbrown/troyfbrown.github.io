@@ -1,10 +1,28 @@
+:root {
+    --background-color: #FFFCF2;
+    --color-2: #CCC5B9;
+    --color-3: #403D39;
+    --color-4: #252422;
+    --color-5: #EB5E28;
+}
+
 html {
     box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--color-3);
+    font-family: helvetica, sans-serif;
 }
 
 main {
     margin-left: 150px;
     margin-right: 150px;
+}
+
+h1, h2, h3 {
+    color: var(--color-5);
 }
 
 h2 {
@@ -73,4 +91,8 @@ figcaption {
 table, th, td {
     border: 1px solid;
     border-collapse: collapse;
+}
+
+th {
+    color: var(color-4);
 }
