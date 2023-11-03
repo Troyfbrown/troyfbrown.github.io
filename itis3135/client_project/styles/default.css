@@ -65,7 +65,7 @@ header {
 
 .header-nav nav {
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 
