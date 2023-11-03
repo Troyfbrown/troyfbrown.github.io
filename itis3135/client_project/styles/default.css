@@ -35,16 +35,18 @@ h2 {
     top: 0;
     padding: 0 10px 0 10px;
     border: 2px solid;
+    border-collapse: collapse;
 }
 
 .header-title {
-    border: 2px solid;
+    border-right: 1px solid;
     justify-self: left;
 }
 
 .header-nav {
-    border: 2px solid;
-    justify-self: space-between;
+    border-left: 1px solid;
+    justify-self: right;
+    justify-content: space-between;
 }
 
 .content-block {
@@ -94,5 +96,5 @@ table, th, td {
 }
 
 th {
-    color: var(color-4);
+    color: var(--color-4);
 }
