@@ -13,9 +13,15 @@ h1 {
     padding: 20px;
 }
 
-.content-box h3 {
+.content-block h3 {
     text-align: left;
 }
-.content-box p {
+.content-block p {
     text-align: left;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
 }
