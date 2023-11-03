@@ -45,20 +45,46 @@ header {
 
 .header-title {
     border-right: 1px solid var(--color-4);
+    width: 15%;
+    padding: 5px;
+    justify-self: center;
+    color: var(--color-5);
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    border-left: 1px solid var(--color-4);
+    width: 85%;
+    padding: 5px;
+    color: var(--color-5);
+    justify-self: right;
+}
+
+.header-nav nav {
+    justify-content: space-evenly;
+}
+
+.footer-block {
+    background-color: var(--color-2);
+    display: flex;
+    flex-direction: row;
+    border: 2px solid var(--color-4);
+    border-collapse: collapse;
+}
+
+.footer-design {
+    border-right: 1px solid var(--color-4);
     width: 20%;
     padding: 5px;
     color: var(--color-5);
 }
 
-.header-nav {
+.footer-contact {
     border-left: 1px solid var(--color-4);
-    width: 80%;
+    width: 50%;
     padding: 5px;
     color: var(--color-5);
-}
-
-.header-nav nav {
-    justify-content: space-evenly;
 }
 
 .content-block {
