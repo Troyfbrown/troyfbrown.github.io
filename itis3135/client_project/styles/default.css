@@ -11,6 +11,14 @@ h2 {
     text-align: center;
 }
 
+.header-block {
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    padding: 10px;
+    border: 2px solid;
+}
+
 .content-block {
     margin: auto;
     width: 80%;
