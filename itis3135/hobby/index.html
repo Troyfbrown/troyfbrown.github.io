@@ -57,12 +57,12 @@
 <body>
     <header>
         <h1>Troy's Hobby: The Bass Drum</h1>
-        <nav><a href="#home-page">Home</a>
-            <a href="#about-page">About</a>
-            <a href="#timeline-page">Timeline</a>
-            <a href="#why-page">Why</a>
-            <a href="#accomplishment-page">Accomplishments</a>
-            <a href="#other-page">Other Drumming</a>
+        <nav><a href="#" onclick="showSection('home-page')">Home</a>
+            <a href="#" onclick="showSection('about-page')">About</a>
+            <a href="#" onclick="showSection('timeline-page')">Timeline</a>
+            <a href="#" onclick="showSection('why-page')">Why</a>
+            <a href="#" onclick="showSection('accomplishment-page')">Accomplishments</a>
+            <a href="#" onclick="showSection('other-page')">Other Drumming</a>
         </nav>
     </header>
     <main>
@@ -171,5 +171,26 @@
             </script>
         </p>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('main section');
+            
+            sections.forEach(section => {
+                if (section.id !== 'home-page') {
+                    section.style.display = 'none';
+                }
+            });
+
+            function showSection(sectionId) {
+                sections.forEach(section => {
+                    if (section.id === sectionId) {
+                        section.style.display = 'block';
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>
