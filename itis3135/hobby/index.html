@@ -57,12 +57,12 @@
 <body>
     <header>
         <h1>Troy's Hobby: The Bass Drum</h1>
-        <nav><a href="#" onclick="showSection('home-page')">Home</a>
-            <a href="#" onclick="showSection('about-page')">About</a>
-            <a href="#" onclick="showSection('timeline-page')">Timeline</a>
-            <a href="#" onclick="showSection('why-page')">Why</a>
-            <a href="#" onclick="showSection('accomplishment-page')">Accomplishments</a>
-            <a href="#" onclick="showSection('other-page')">Other Drumming</a>
+        <nav><a href="#" onclick="showSectionOnClick('home-page')">Home</a>
+            <a href="#" onclick="showSectionOnClick('about-page')">About</a>
+            <a href="#" onclick="showSectionOnClick('timeline-page')">Timeline</a>
+            <a href="#" onclick="showSectionOnClick('why-page')">Why</a>
+            <a href="#" onclick="showSectionOnClick('accomplishment-page')">Accomplishments</a>
+            <a href="#" onclick="showSectionOnClick('other-page')">Other Drumming</a>
         </nav>
     </header>
     <main>
@@ -190,6 +190,10 @@
                     }
                 });
             }
+
+            window.showSectionOnClick = function(sectionId) {
+                showSection(sectionId);
+            };
         });
     </script>
 </body>
