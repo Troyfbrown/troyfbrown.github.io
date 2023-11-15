@@ -1,13 +1,13 @@
 let drawing = false;
 
 function setup() {
-    createCanvas(400, 400);
-    background(255);
+    createCanvas(800, 800);
+    background('#f7b538');
 }
 
 function draw() {
     if (drawing) {
-        stroke(0);
+        stroke('#c32f27');
         strokeWeight(3);
         line(pmouseX, pmouseY, mouseX, mouseY);
     }

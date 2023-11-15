@@ -210,3 +210,9 @@ img {
     grid-column: -2;
     grid-row: 2 / span 4;
 }
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #780116;
+}
