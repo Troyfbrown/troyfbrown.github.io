@@ -23,7 +23,8 @@
                 <label for="serv5"><input type="checkbox"><input id="serv5" name="serv5" class="inline" value="5">30 Minute Private Lesson: $20</label>
                 <label for="serv6"><input type="checkbox"><input id="serv6" name="serv6" class="inline" value="6">60 Minute Private Lesson: $35</label>
             </fieldset>
-            <button type="button" id="submit">Checkout</button>
+            <button type="button" id="submit" onclick="calculateService()">Checkout</button>
+            <p id="services-display"></p>
         </div>
     </main>
     <div data-include="components/footer.html"></div>
