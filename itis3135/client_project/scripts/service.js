@@ -40,5 +40,5 @@ function calculateService() {
     }
 
     let serviceDisplay = document.getElementById("services-display");
-    serviceDisplay.innerHTML = `"You Have selected ${totalServices} of Aubrie Lynn's services. This will cost a total of $${totalCost}"`;
+    serviceDisplay.innerHTML = `You Have selected ${totalServices} of Aubrie Lynn's services. This will cost a total of $${totalCost}`;
 }
