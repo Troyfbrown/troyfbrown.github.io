@@ -4,7 +4,7 @@ function displayImage(n) {
     } else if (n === 2) {
         alert("Post COVID, Aubrie returned to Resistance Indoor Percussion for the 2022 season. This time playing marimba for the ensemble.");
     } else if (n === 3) {
-        alert("For her first season of Drum Corps, Aubrie competed played xylophone and glockenspiel for the Madison Scouts in 2022. The world class DCI ensemble placed 15th at world championships that year.");
+        alert("For her first season of Drum Corps, Aubrie played xylophone and glockenspiel for the Madison Scouts. The world class DCI ensemble placed 15th at world championships that year.");
     } else if (n === 4) {
         alert("Going into her 3rd year of indoor, Aubrie marched with the Ohio based group Rhythm X for their 2023. She played vibraphone this year, helping the ensemble to win a bronze medal at world championships.");
     } else if (n === 5) {
