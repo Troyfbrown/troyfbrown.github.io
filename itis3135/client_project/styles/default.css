@@ -13,6 +13,7 @@ html {
 }
 
 body {
+    height: 100%;
     background-color: var(--background-color);
     color: var(--color-3);
     font-family: helvetica, sans-serif;
