@@ -107,6 +107,7 @@ footer {
 }
 
 .content-block {
+    position: relative;
     margin: auto;
     width: 80%;
     height: auto;
