@@ -7,59 +7,63 @@
     <link rel="stylesheet" href="styles/default.css" type="text/css">
 </head>
 <body>
-    <div data-include="components/header.html"></div>
-    <main>
-        <h2>Availability</h2>
-        <div class="content-block">
-            <h3>Below is Aubrie's current weekly availability.</h3>
-            <figure>
-                <table>
-                    <tr>
-                        <td></td>
-                        <th>Sunday</th>
-                        <th>Monday</th>
-                        <th>Tuesday</th>
-                        <th>Wednesday</th>
-                        <th>Thursday</th>
-                        <th>Friday</th>
-                        <th>Saturday</th>
-                    </tr>
-                    <tr>
-                        <th>Morning</th>
-                        <td>Booked</td>
-                        <td>Booked</td>
-                        <td>Open</td>
-                        <td>Booked</td>
-                        <td>Open</td>
-                        <td>Open</td>
-                        <td>Open</td>
-                    </tr>
-                    <tr>
-                        <th>Afternoon</th>
-                        <td>Booked</td>
-                        <td>Booked</td>
-                        <td>Open</td>
-                        <td>Booked</td>
-                        <td>Open</td>
-                        <td>Open</td>
-                        <td>Booked</td>
-                    </tr>
-                    <tr>
-                        <th>Evening</th>
-                        <td>Booked</td>
-                        <td>Open</td>
-                        <td>Open</td>
-                        <td>Open</td>
-                        <td>Open</td>
-                        <td>Open</td>
-                        <td>Booked</td>
-                    </tr>
-                </table>
-                <figcaption><span class="underline">Morning:</span> 6:00am-11:59am <span class="underline">Afternoon:</span> 12:00pm-5:30pm <span class="underline">Evening:</span> 5:30pm-10:00pm</figcaption>
-            </figure>
+    <div id="page-container">
+        <div data-include="components/header.html"></div>
+        <div id="content-wrap">
+            <main>
+                <h2>Availability</h2>
+                <div class="content-block">
+                    <h3>Below is Aubrie's current weekly availability.</h3>
+                    <figure>
+                        <table>
+                            <tr>
+                                <td></td>
+                                <th>Sunday</th>
+                                <th>Monday</th>
+                                <th>Tuesday</th>
+                                <th>Wednesday</th>
+                                <th>Thursday</th>
+                                <th>Friday</th>
+                                <th>Saturday</th>
+                            </tr>
+                            <tr>
+                                <th>Morning</th>
+                                <td>Booked</td>
+                                <td>Booked</td>
+                                <td>Open</td>
+                                <td>Booked</td>
+                                <td>Open</td>
+                                <td>Open</td>
+                                <td>Open</td>
+                            </tr>
+                            <tr>
+                                <th>Afternoon</th>
+                                <td>Booked</td>
+                                <td>Booked</td>
+                                <td>Open</td>
+                                <td>Booked</td>
+                                <td>Open</td>
+                                <td>Open</td>
+                                <td>Booked</td>
+                            </tr>
+                            <tr>
+                                <th>Evening</th>
+                                <td>Booked</td>
+                                <td>Open</td>
+                                <td>Open</td>
+                                <td>Open</td>
+                                <td>Open</td>
+                                <td>Open</td>
+                                <td>Booked</td>
+                            </tr>
+                        </table>
+                        <figcaption><span class="underline">Morning:</span> 6:00am-11:59am <span class="underline">Afternoon:</span> 12:00pm-5:30pm <span class="underline">Evening:</span> 5:30pm-10:00pm</figcaption>
+                    </figure>
+                </div>
+            </main>
         </div>
-    </main>
-    <div data-include="components/footer.html"></div>
+        <div data-include="components/footer.html"></div>
+    </div>
     <script src="scripts/HTMLInclude.js"></script>
 </body>
 </html>

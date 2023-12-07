@@ -8,35 +8,39 @@
     <script src="scripts/gallery.js"></script>
 </head>
 <body>
-    <div data-include="components/header.html"></div>
-    <main>
-        <h2>Marching Experience</h2>
-        <div></div>
-        <p>Below is an interactive gallery of Aubrie's marching experience. Click on an image to learn more!</p>
-        <section class="gallery">
-            <figure>
-                <img src="images/Aubrie_Rip20.jpg" alt="Aubrie at Resistance 2020" onclick="displayImage(1)">
-                <figcaption>Resistance Indoor Percussion 2020</figcaption>
-            </figure>
-            <figure>
-                <img src="images/Aubrie_Rip22.jpg" alt="Aubrie at Resistance 2022" onclick="displayImage(2)">
-                <figcaption>Resistance Indoor Percussion 2022</figcaption>
-            </figure>
-            <figure>
-                <img src="images/Aubrie_Scouts.jpg" alt="Aubrie at Madison Scouts 2022" onclick="displayImage(3)">
-                <figcaption>The Madison Scouts 2022</figcaption>
-            </figure>
-            <figure>
-                <img src="images/Aubrie_X.jpg" alt="Aubrie at Rhythm X 2023" onclick="displayImage(4)">
-                <figcaption>Rhythm X 2023</figcaption>
-            </figure>
-            <figure>
-                <img src="images/Aubrie_Mandarins.jpg" alt="Aubrie at Mandarins 2023" onclick="displayImage(5)">
-                <figcaption>The Mandarins 2023</figcaption>
-            </figure>
-        </section>
-    </main>
-    <div data-include="components/footer.html"></div>
+    <div id="page-container">
+        <div data-include="components/header.html"></div>
+        <div id="content-wrap">
+            <main>
+                <h2>Marching Experience</h2>
+                <div></div>
+                <p>Below is an interactive gallery of Aubrie's marching experience. Click on an image to learn more!</p>
+                <section class="gallery">
+                    <figure>
+                        <img src="images/Aubrie_Rip20.jpg" alt="Aubrie at Resistance 2020" onclick="displayImage(1)">
+                        <figcaption>Resistance Indoor Percussion 2020</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Aubrie_Rip22.jpg" alt="Aubrie at Resistance 2022" onclick="displayImage(2)">
+                        <figcaption>Resistance Indoor Percussion 2022</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Aubrie_Scouts.jpg" alt="Aubrie at Madison Scouts 2022" onclick="displayImage(3)">
+                        <figcaption>The Madison Scouts 2022</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Aubrie_X.jpg" alt="Aubrie at Rhythm X 2023" onclick="displayImage(4)">
+                        <figcaption>Rhythm X 2023</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Aubrie_Mandarins.jpg" alt="Aubrie at Mandarins 2023" onclick="displayImage(5)">
+                        <figcaption>The Mandarins 2023</figcaption>
+                    </figure>
+                </section>
+            </main>
+        </div>
+        <div data-include="components/footer.html"></div>
+    </div>
     <script src="scripts/HTMLInclude.js"></script>
 </body>
 </html>
