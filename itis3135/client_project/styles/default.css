@@ -3,7 +3,7 @@
     --color-2: #CCC5B9;
     --color-3: #403D39;
     --color-4: #252422;
-    --color-5: #EB5E28;
+    --color-5: #e85a22;
 }
 
 html {
@@ -43,6 +43,7 @@ header {
 
 footer {
     bottom: 0;
+    margin-bottom: 5px;
 }
 
 .header-block {
